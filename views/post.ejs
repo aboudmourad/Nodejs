@@ -1,0 +1,22 @@
+<%- include("./components/head") %>
+
+    <h1 class="title"> Add Blog </h1>
+       
+       
+    <form method="POST" action="/add-blog">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Title</label>
+            <input name="title" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Title">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Snippet</label>
+            <input name="snippet"  type="text" class="form-control" id="exampleInputPassword1" placeholder="Snippet">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Body</label>
+            <input name="body" type="text" class="form-control" id="exampleInputPassword1" placeholder="Body">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    
+<%- include("./components/footer") %>

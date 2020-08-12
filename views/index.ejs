@@ -1,0 +1,19 @@
+<%- include("./components/head") %>
+
+          <h1 class="title"> All Blogs </h1>
+       
+        <% if (result.length > 0 ) { %>
+            <% result.forEach (value => {%>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title"><%= value.title %></h5>
+                      <h6 class="card-subtitle mb-2 text-muted"><%= value.snippet %></h6>
+                      <p class="card-text"><%= value.body %></p>
+                      <a href=/update-blog/<%= value.id %> class="card-link">Update</a>
+                      <a href=/delete-blog/<%= value.id %> class="card-link">Delete</a>
+                    </div>
+                  </div>
+                <% } )%>
+        <% } %>
+    
+<%- include("./components/footer") %>
