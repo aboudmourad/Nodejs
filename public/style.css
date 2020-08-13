@@ -10,3 +10,7 @@
 form {
     margin: 10%;
 }
+
+.error{
+    color:red
+}

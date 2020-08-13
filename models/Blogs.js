@@ -4,7 +4,9 @@ const Schema = mongoose.Schema
 const blogSchema = new Schema( {
     title :{
         type:String,
-        required:true
+        required:true,
+        min: [6, 'Too few char'],
+        max: 25
     },
     snippet :{
         type:String,

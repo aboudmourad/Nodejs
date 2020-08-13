@@ -6,6 +6,7 @@ const controller = require('../controllers/controllers')
 
 router.get('/',controller.homepage)
 
+
 router.all('/add-blog',controller.addBlog)
 
 router.all('/update-blog/:id',controller.updateBlog)

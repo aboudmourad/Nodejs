@@ -1,7 +1,11 @@
 <%- include("./components/head") %>
 
     <h1 class="title"> Add Blog </h1>
-       
+    
+    <% if ( error) {%>
+        <h1 class='error'><%= error %></h1>
+    <% } %>
+
        
     <form method="POST" action="/add-blog">
         <div class="form-group">
